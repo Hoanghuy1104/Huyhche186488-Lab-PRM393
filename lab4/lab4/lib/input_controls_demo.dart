@@ -18,8 +18,8 @@ class _InputControlsDemoState extends State<InputControlsDemo> {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
-      firstDate: DateTime(2000),
-      lastDate: DateTime(2100),
+      firstDate: DateTime(2025),
+      lastDate: DateTime(2026),
     );
     if (picked != null) {
       setState(() {
