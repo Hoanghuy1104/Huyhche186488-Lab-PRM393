@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 // ==========================================
-// EXERCISE 1: Product Model & Repository
+// EXERCISE 1: Product Model & Repository Hiểu rõ về Future và Stream
 // ==========================================
 
 class Product {
@@ -57,7 +57,7 @@ Future<void> runExercise1() async {
 }
 
 // ==========================================
-// EXERCISE 2: User Repository with JSON
+// EXERCISE 2: User Repository with JSON Thực hành tuần tự hóa / giải tuần tự hóa JSON (serialization / deserialization).
 // ==========================================
 
 class User {
@@ -111,7 +111,7 @@ Future<void> runExercise2() async {
 }
 
 // ==========================================
-// EXERCISE 3: Async + Microtask Debugging
+// EXERCISE 3: Async + Microtask Debugging Phân biệt hàng đợi microtask và hàng đợi sự kiện (event queues).
 // ==========================================
 
 Future<void> runExercise3() async {
@@ -129,22 +129,12 @@ Future<void> runExercise3() async {
 
   print('2. Synchronous: End of runExercise3');
 
-  /*
-   * Explanation:
-   * In Dart's Event Loop architecture:
-   * 1. Microtask Queue has HIGHER priority than Event Queue.
-   * 2. Synchronous code executes immediately to completion.
-   * 3. Before taking any event from Event Queue (e.g., Future timers/IO),
-   *    Dart completely clears all items in the Microtask Queue.
-   * Therefore, scheduleMicrotask() runs BEFORE Future().
-   */
-
   await Future.delayed(const Duration(milliseconds: 100));
   print('');
 }
 
 // ==========================================
-// EXERCISE 4: Stream Transformation
+// EXERCISE 4: Stream Transformation Sử dụng các toán tử hàm trên stream.
 // ==========================================
 
 Future<void> runExercise4() async {
@@ -163,7 +153,7 @@ Future<void> runExercise4() async {
 }
 
 // ==========================================
-// EXERCISE 5: Factory Constructors & Cache
+// EXERCISE 5: Factory Constructors & Cache Trình bày cách các hàm khởi tạo factory thực hiện lưu bộ nhớ đệm (caching).
 // ==========================================
 
 class Settings {

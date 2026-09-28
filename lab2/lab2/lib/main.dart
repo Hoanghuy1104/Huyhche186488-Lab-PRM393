@@ -9,7 +9,7 @@ void main() async {
 }
 
 // =============================================================================
-// EXERCISE 1
+// EXERCISE 1 Thực hành cấu trúc chương trình và khai báo biến.  
 // =============================================================================
 void runExercise1() {
   print("\n===== EXERCISE 1 =====");
@@ -27,7 +27,7 @@ void runExercise1() {
 }
 
 // =============================================================================
-// EXERCISE 2
+// EXERCISE 2 Làm việc với List, Set, Map và các toán tử (+, -, ==, &&, ? :).  
 // =============================================================================
 void runExercise2() {
   print("\n===== EXERCISE 2 =====");
@@ -64,7 +64,7 @@ void runExercise2() {
 }
 
 // =============================================================================
-// EXERCISE 3
+// EXERCISE 3 Áp dụng if/else, switch, vòng lặp và hàm.
 // =============================================================================
 void runExercise3() {
   print("\n===== EXERCISE 3 =====");
@@ -111,7 +111,7 @@ double calculateArea(double w, double h) => w * h;
 int multiply(int a, int b) => a * b;
 
 // =============================================================================
-// EXERCISE 4
+// EXERCISE 4 Thực hành về lớp, đối tượng, hàm khởi tạo, kế thừa và ghi đè phương thức.
 // =============================================================================
 class Car {
   String brand;
@@ -148,7 +148,7 @@ void runExercise4() {
 }
 
 // =============================================================================
-// EXERCISE 5
+// EXERCISE 5 Làm việc với các tính năng bất đồng bộ của Dart.
 // =============================================================================
 Future<String> fetchData() async {
   await Future.delayed(Duration(milliseconds: 1000));

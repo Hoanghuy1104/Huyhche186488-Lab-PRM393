@@ -4,7 +4,6 @@ class Vehicle {
   String brand;
   int year;
 
-  // Default Constructor cho Vehicle
   Vehicle(this.brand, this.year);
 
   void startEngine() {
@@ -13,14 +12,13 @@ class Vehicle {
 }
 
 // TODO 2: Định nghĩa class Car kế thừa từ Vehicle.
-// Thêm thuộc tính bool isElectric.
+
 class Car extends Vehicle {
   bool isElectric;
 
   // TODO 3: Viết constructor mặc định cho Car (dùng super để truyền brand và year)
   Car(super.brand, super.year, this.isElectric);
-
-  // Viết Named Constructor: Car.tesla(int year) thiết lập sẵn brand="Tesla" và isElectric=true.
+  
   Car.tesla(int year)
       : isElectric = true,
         super("Tesla", year);
