@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Học Flutter Basis",
+    "description": "Tìm hiểu về Widget và State"
+  },
+  {
+    "id": 2,
+    "title": "Đọc dữ liệu từ JSON",
+    "description": "Sử dụng rootBundle và jsonDecode"
+  }
+]
